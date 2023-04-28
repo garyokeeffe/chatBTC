@@ -9,7 +9,7 @@ The following is a brief overview of the workflow used to create and train the C
 1. **Data Collection**: Various sources of data related to Bitcoin were collected, such as books, papers, articles, tweets, etc. This data was then cleaned and preprocessed to remove any noise and ensure consistency.
 
       Dataset sorces:
-
+    - Satoshi Nakamoto quotes, emails ..etc [here](https://github.com/NakamotoInstitute/nakamotoinstitute.org/blob/master/data/emails.json)
     - Twitter scrap with [Hive](https://hive.one/)
     - Bitcoin Q&A from [stack exchange](https://bitcoin.stackexchange.com/) 
     - Text data from [nomicc Ai](https://home.nomic.ai/)
