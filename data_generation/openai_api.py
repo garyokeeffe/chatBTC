@@ -3,7 +3,7 @@ import json
 
 url = "https://api.openai.com/v1/chat/completions"
 
-def create_payload(model, messages, temperature=1, top_p=1, n=1, stop=None, max_tokens=100, presence_penalty=0, frequency_penalty=0, user=None, logit_bias=None):
+def create_payload(model, messages, temperature=.8, top_p=1, n=1, stop=None, max_tokens=100, presence_penalty=0, frequency_penalty=0, user=None, logit_bias=None):
     payload = {
         "model": model,
         "messages": messages,

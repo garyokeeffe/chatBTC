@@ -7,7 +7,7 @@ load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Example Data Gra
-bitcoin_topic = "Bitcoin mining"
+bitcoin_topic = "Cold Storage Best Practices"
 number_of_questions_to_generate = 10
 location_to_save = "data_generation/training_data/chatgpt_training_data.csv"
 bitcoin_questions = dg.BitcoinQuestions(openai_api_key)
