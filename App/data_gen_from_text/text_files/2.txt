@@ -1,0 +1,19 @@
+Units and divisibility
+The unit of account of the bitcoin system is the bitcoin. Currency codes for representing bitcoin are BTC[a] and XBT.[b][26]: 2  Its Unicode character is ₿.[1] One bitcoin is divisible to eight decimal places.[7]: ch. 5  Units for smaller amounts of bitcoin are the millibitcoin (mBTC), equal to 1⁄1000 bitcoin, and the satoshi (sat), which is the smallest possible division, and named in homage to bitcoin's creator, representing 1⁄100000000 (one hundred millionth) bitcoin.[2] 100,000 satoshis are one mBTC.[27]
+
+Blockchain
+
+Data structure of blocks in the ledger
+The bitcoin blockchain is a public ledger that records bitcoin transactions.[28] It is implemented as a chain of blocks, each block containing a cryptographic hash of the previous block up to the genesis block[c] in the chain. A network of communicating nodes running bitcoin software maintains the blockchain.[29]: 215–219  Transactions of the form payer X sends Y bitcoins to payee Z are broadcast to this network using readily available software applications.
+
+Network nodes can validate transactions, add them to their copy of the ledger, and then broadcast these ledger additions to other nodes. To achieve independent verification of the chain of ownership, each network node stores its own copy of the blockchain.[30] At varying intervals of time averaging to every 10 minutes, a new group of accepted transactions, called a block, is created, added to the blockchain, and quickly published to all nodes, without requiring central oversight. This allows bitcoin software to determine when a particular bitcoin was spent, which is needed to prevent double-spending. A conventional ledger records the transfers of actual bills or promissory notes that exist apart from it, but as a digital ledger, bitcoins only exist by virtue of the blockchain; they are represented by the unspent outputs of transactions.[7]: ch. 5 
+
+Individual blocks, public addresses, and transactions within blocks can be examined using a blockchain explorer.[31]
+
+Transactions
+See also: Bitcoin network
+Transactions are defined using a Forth-like scripting language.[7]: ch. 5  Transactions consist of one or more inputs and one or more outputs. When a user sends bitcoins, the user designates each address and the amount of bitcoin being sent to that address in an output. To prevent double spending, each input must refer to a previous unspent output in the blockchain.[32] The use of multiple inputs corresponds to the use of multiple coins in a cash transaction. Since transactions can have multiple outputs, users can send bitcoins to multiple recipients in one transaction. As in a cash transaction, the sum of inputs (coins used to pay) can exceed the intended sum of payments. In such a case, an additional output is used, returning the change back to the payer.[32] Any input satoshis not accounted for in the transaction outputs become the transaction fee.[32]
+
+Though transaction fees are optional, miners can choose which transactions to process and prioritize those that pay higher fees.[32] Miners may choose transactions based on the fee paid relative to their storage size, not the absolute amount of money paid as a fee. These fees are generally measured in satoshis per byte (sat/b). The size of transactions is dependent on the number of inputs used to create the transaction and the number of outputs.[7]: ch. 8 
+
+The blocks in the blockchain were originally limited to 32 megabytes in size. The block size limit of one megabyte was introduced by Satoshi Nakamoto in 2010.[clarification needed] Eventually, the block size limit of one megabyte created problems for transaction processing, such as increasing transaction fees and delayed processing of transactions.[33] Andreas Antonopoulos has stated Lightning Network is a potential scaling solution and referred to lightning as a second-layer routing network.[7]: ch. 8 

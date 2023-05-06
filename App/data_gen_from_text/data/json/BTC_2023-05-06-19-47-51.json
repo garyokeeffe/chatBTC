@@ -1,0 +1,25 @@
+{
+    "Question_ID": "1",
+    "Question": "What is Bitcoin?",
+    "Answer": "Bitcoin is a decentralized digital currency that operates on a public ledger called a blockchain. It was invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto."
+},
+{
+    "Question_ID": "2",
+    "Question": "How are Bitcoin transactions verified?",
+    "Answer": "Bitcoin transactions are verified by network nodes through cryptography and recorded in a public distributed ledger called a blockchain."
+},
+{
+    "Question_ID": "3",
+    "Question": "What is the environmental impact of Bitcoin?",
+    "Answer": "The environmental effects of bitcoin are substantial. Its proof-of-work algorithm for bitcoin mining is designed to be computationally difficult, which requires the consumption of increasing quantities of electricity, the generation of which has contributed to climate change. According to the University of Cambridge, bitcoin has emitted an estimated 200 million tonnes of carbon dioxide since its launch."
+},
+{
+    "Question_ID": "4",
+    "Question": "How many countries have banned Bitcoin?",
+    "Answer": "As of November 2021, nine countries have fully banned bitcoin use, and a further forty-two have implicitly banned it."
+},
+{
+    "Question_ID": "5",
+    "Question": "Has any country adopted Bitcoin as legal tender?",
+    "Answer": "El Salvador has adopted Bitcoin as legal tender, although use by merchants remains low."
+}
