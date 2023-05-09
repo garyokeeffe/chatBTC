@@ -6,7 +6,7 @@ class GPT3QuestionModel:
         self.openai_api_key = openai_api_key
         self.headers = {"Authorization": f"Bearer {openai_api_key}"}
 
-    def respond_to_prompt(self, prompts, log_bias=None, temperature=0.8, max_tokens=500, stop=None):
+    def respond_to_prompt(self, prompts, log_bias=None, temperature=0.6, max_tokens=500, stop=None):
         if not isinstance(prompts, list):
             prompts = [prompts]
 
