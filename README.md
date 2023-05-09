@@ -1,40 +1,65 @@
 # ChatBTC
 
-ChatBTC is an AI chat bot that has been designed to answer questions related to Bitcoin. This repository contains the source code for ChatBTC, as well as the necessary data files and documentation.
+This is an Open Source project designed to create a Bitcoin Optimized LLM.
 
-## Workflow
+## Codebase Structure
+The codebase is organized into 5 modules: `data`, `models`, `tests`, `data_generation`, and `utilities`. Outside of these modules, the modules, the codebase requires that you create a `.env` file (with contents: `OPENAI_API_KEY='YOUR API KEY'`), and we have included a `main.py` script as an example of how to work with the files in this project. See below for a basic schematic:
 
-The following is a brief overview of the workflow used to create and train the ChatBTC chat bot:
+chatBTC/
+  ├─ data/
+  │   ├─ answers/
+  │   │   └─ data.csv
+  │   └─ questions/
+  │       └─ data.csv
+  ├─ models/
+  │   ├─ __init__.py
+  │   ├─ gpt3_default_model.py
+  │   ├─ gpt3_prompt_eng_model.py
+  │   └─ gpt3_answer_model.py
+  ├─ tests/
+  ├─ data_generation/
+  │   └─ bitcoin_data_generator.py
+  ├─ utils/
+  │   ├─ model_factory.py
+  │   └─ openai_api.py
+  ├─ .env
+  └─ main.py
 
-1. **Data Collection**: Various sources of data related to Bitcoin were collected, such as books, papers, articles, tweets, etc. This data was then cleaned and preprocessed to remove any noise and ensure consistency.
+### data
+The `data` section contains all of the questions and answers data used for training and testing the model. This data is currently stored in .csv format however as the project scales it will be migrated to a more scalable location.
 
-      Dataset sorces:
-    - Satoshi Nakamoto quotes, emails ..etc [here](https://github.com/NakamotoInstitute/nakamotoinstitute.org/blob/master/data/emails.json)
-    - Twitter scrap with [Hive](https://hive.one/)
-    - Bitcoin Q&A from [stack exchange](https://bitcoin.stackexchange.com/) 
-    - Text data from [nomicc Ai](https://home.nomic.ai/)
-    - Speach to text to collect data from podcasts & videos using tools like [OASIS](https://theoasis.com/) and [Speech recognition](https://github.com/Uberi/speech_recognition#readme)
-    
+### models
+The `models` section contains all of the modles that have been opensourced. Currently all of the models are different versions of OpenAI's gpt3.5 model: `gpt3_default_model.py` is OpenAI's baseline model, `gpt3_prompt_eng_model.py` is a prompt engineered version of this default model aimed to be able to answer Bitcoin questions well, and `gpt3_answer_model.py` is the model used to generate simulated user questions (which are used to generate testing data).
 
-     Dataset format: 
-    - SQuAD dataset format, more details [here](https://rajpurkar.github.io/SQuAD-explorer/)
- 
-    - Atlas dataset format, more details [here](https://atlas.nomic.ai/)
+### tests
+The `tests` module is currently empty, however we will be building out a comprehensive testing saddle as we model as we start gathering labelled data.
 
+### data_generation
+The `data_generation` module contains all of the functions used to generate data for training the data. The `bitcoin_data_generator.py` file contains code used to generate data from preexisting LLM models. We will shortly be adding code here that will allow us to generate data from podcasts and other openly available online resources.
 
+### utils
+The `utils` module contains generic utility functions that don't cleanly map onto any of the other modules. Currently it hosts an OpenAI API wrapper and a file that maps each model to it's corresponding data label.
 
+## Project Next Steps
 
-2. **Language Model Selection**: A list of Language Models (LLMs) could be found [Here](https://github.com/formulahendry/awesome-gpt). by selecting the most suitable LLMs that would provide the best performance for the chatBTC.
+The following list is a brief overview of items on our to-do list:
 
+1. **Data Collection**: We are generating data to train the model, we are using a three-pronged approach for generating data: 
+- using existing LLMs to generate training data
+- using text various open online resources to generate training data
+- using manual training data
+We need your help on this! If you are open to working with us on any of these three areas, please reach out. 
 
-3. **ChatBTC Front End**: The ChatBTC integration  into a website or an API.
+2. **Open Source LLM migration**: Right now our models all have an untenable dependency on the user having an OpenAI API key. While anyone can generate an OpenAI API key and leverage our Open Source prompt engineered optimized versions of OpenAI's baseline model. We plan on moving to an Open Source LLM ASAP (while maintaining the same quality of model).
 
+3. **Testing**: We are building out a comprehensive testing suite so that model performance can be benchmarked and tested across a broad range of Bitcoin adjacent topics.
 
+3. **ChatBTC Front End**: We are buiding out a front-end that will allow anyone interact with our best performing model. For now you can interact with [our top-performing LLM here](https://nostr.money).
 
 ## Contributions
-
-If you would like to contribute to the development of ChatBTC, please submit a pull request or raise an issue on the GitHub repository. 
+If you would like to contribute to the development of ChatBTC, here are two avenues:
+- you can submit a pull request or raise an issue directly on the GitHub repository
+- you can reach out to one of the project maintainers on Twitter: [Mustafa](https://twitter.com/MuatafaGMI) and [Gary](https://twitter.com/garyjokeeffe)
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
