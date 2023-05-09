@@ -1,7 +1,7 @@
 # This is model: gpt3.5 (v0.1)
 from utils.openai_api import create_payload, make_request_and_process_response, url
 
-class GPT3AnswerModel:
+class GPT3PromptEngModel:
     def __init__(self, openai_api_key):
         self.openai_api_key = openai_api_key
         self.headers = {"Authorization": f"Bearer {openai_api_key}"}

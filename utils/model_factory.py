@@ -1,4 +1,4 @@
-from models import GPT3AnswerModel, GPT3QuestionModel
+from models import GPT3PromptEngModel, GPT3QuestionModel, GPT3DefaultModel
 
 class ModelFactory:
     def __init__(self, api_keys=None):
@@ -9,12 +9,17 @@ class ModelFactory:
             openai_api_key = self.api_keys.get("openai")
             if not openai_api_key:
                 raise ValueError("An OpenAI API key is required for this model.")
-            return GPT3AnswerModel(openai_api_key)
+            return GPT3PromptEngModel(openai_api_key)
         elif model_name == "gpt3.5 question (v0.1)":
             openai_api_key = self.api_keys.get("openai")
             if not openai_api_key:
                 raise ValueError("An OpenAI API key is required for this model.")
             return GPT3QuestionModel(openai_api_key)
+        elif model_name == "gpt3.5 default":
+            openai_api_key = self.api_keys.get("openai")
+            if not openai_api_key:
+                raise ValueError("An OpenAI API key is required for this model.")
+            return GPT3DefaultModel(openai_api_key)
         # Add more conditions here for different models
         else:
             raise ValueError(f"Model '{model_name}' not supported.")
