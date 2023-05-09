@@ -4,7 +4,7 @@ This is an Open Source project designed to create a free and open Bitcoin-optimi
 
 ## Codebase Structure
 The codebase is organized into 5 modules: `data`, `models`, `tests`, `data_generation`, and `utilities`. Outside of these modules, the modules, the codebase requires that you create a `.env` file (with contents: `OPENAI_API_KEY='YOUR API KEY'`), and we have included a `main.py` script as an example of how to work with the files in this project. See below for a basic schematic:
-
+```
 chatBTC/
   ├─ data/
   │   ├─ answers/
@@ -24,7 +24,7 @@ chatBTC/
   │   └─ openai_api.py
   ├─ .env
   └─ main.py
-
+```
 ### data
 The `data` section contains all of the questions and answers data used for training and testing the model. This data is currently stored in `.csv` format however as the project grows this module will be migrated into a more scalable location.
 
