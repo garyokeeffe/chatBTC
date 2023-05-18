@@ -1,0 +1,50 @@
+{
+    "Question_ID": "1",
+    "Question": "What is the main problem with fiat currency?",
+    "Answer": "The main problem with fiat currency is that it is subject to inflation, which erodes its purchasing power over time. This is because central banks can print more money, which increases the supply and reduces the value of each individual unit."
+},
+{
+    "Question_ID": "2",
+    "Question": "How does Bitcoin solve the problem of inflation?",
+    "Answer": "Bitcoin solves the problem of inflation by having a fixed supply of 21 million coins that will ever be created. This means that there is no central authority that can print more Bitcoin, and the supply is limited, which helps to maintain its value over time."
+},
+{
+    "Question_ID": "3",
+    "Question": "What is the role of mining in the Bitcoin network?",
+    "Answer": "Mining is the process by which new Bitcoin is created and transactions are verified on the network. Miners use powerful computers to solve complex mathematical problems, and in return, they receive newly minted Bitcoin as a reward."
+},
+{
+    "Question_ID": "4",
+    "Question": "How does the Bitcoin network prevent double-spending?",
+    "Answer": "The Bitcoin network prevents double-spending by using a distributed ledger called the blockchain. This ledger records all transactions on the network and is maintained by a network of nodes. Once a transaction is recorded on the blockchain, it cannot be altered or deleted, which prevents double-spending."
+},
+{
+    "Question_ID": "5",
+    "Question": "What is the Lightning Network?",
+    "Answer": "The Lightning Network is a layer 2 scaling solution for Bitcoin that allows for faster and cheaper transactions. It works by creating payment channels between users, which allows them to transact off-chain and settle their balances on the blockchain at a later time."
+},
+{
+    "Question_ID": "6",
+    "Question": "What is the difference between Bitcoin and other cryptocurrencies?",
+    "Answer": "Bitcoin is the first and most well-known cryptocurrency, and it has a fixed supply of 21 million coins. Other cryptocurrencies may have different supply limits, different mining algorithms, or different features and use cases."
+},
+{
+    "Question_ID": "7",
+    "Question": "What is the role of nodes in the Bitcoin network?",
+    "Answer": "Nodes are computers that run the Bitcoin software and help to maintain the network. They validate transactions, relay them to other nodes, and help to secure the network by verifying the blockchain."
+},
+{
+    "Question_ID": "8",
+    "Question": "What is the significance of Bitcoin's decentralized nature?",
+    "Answer": "Bitcoin's decentralized nature means that there is no central authority that controls the network. This makes it more resistant to censorship, hacking, and other forms of interference. It also means that users have more control over their own funds and can transact with anyone in the world without needing permission from a third party."
+},
+{
+    "Question_ID": "9",
+    "Question": "What is the potential impact of Bitcoin on the global economy?",
+    "Answer": "Bitcoin has the potential to disrupt the global economy by providing a decentralized, censorship-resistant, and borderless form of money. It could reduce the power of central banks and governments, and give individuals more control over their own finances. However, it is still a relatively new technology and its impact is uncertain."
+},
+{
+    "Question_ID": "10",
+    "Question": "What are some potential risks associated with investing in Bitcoin?",
+    "Answer": "Some potential risks associated with investing in Bitcoin include its volatility, regulatory uncertainty, and the risk of hacking or theft. It is important for investors to do their own research and understand the risks before investing in Bitcoin or any other cryptocurrency."
+}

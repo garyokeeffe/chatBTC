@@ -1,4 +1,0 @@
-virtual_environment/*
-.env
-*.pyc
-.DS_Store
